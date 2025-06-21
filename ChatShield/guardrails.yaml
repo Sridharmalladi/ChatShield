@@ -1,0 +1,34 @@
+sensitive_topics:
+  - ceo salary
+  - internal forecast
+  - hiring plans
+  - financial projections
+  - layoff plans
+  - executive compensation
+  - confidential strategy
+  - merger plans
+  - acquisition plans
+
+access_levels:
+  Manager:
+    can_access: all
+    description: "Full access to all document content"
+  Employer:
+    can_access: []
+    description: "Limited access to general information only"
+    restricted_topics:
+      - hiring
+      - financial
+      - strategic
+      - confidential
+      - executive
+
+document_processing:
+  chunk_size: 1000
+  chunk_overlap: 200
+  max_chunks_per_document: 50
+
+security:
+  max_query_length: 500
+  rate_limit_per_minute: 10
+  session_timeout_minutes: 30 
