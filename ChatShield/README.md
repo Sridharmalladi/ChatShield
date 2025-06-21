@@ -284,5 +284,3 @@ For questions or issues:
 3. Open an issue on GitHub
 
 ---
-
-**Built with ❤️ for secure document management by ChatShield** 
